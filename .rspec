@@ -1,0 +1,9 @@
+--color
+--require spec_helper
+
+<% if ENV['BUILD_NUMBER'] %>
+  --format doc --format RspecJunitFormatter
+  --out results/rspec.xml
+<% else %>
+  --format doc
+<% end %>

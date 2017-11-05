@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+  - 2.4.1
+  - 2.3.4
+  - 2.2.5
+notifications:
+  email:
+    - jani.jegoroff@gmail.com
+install:
+  - bundle install --retry=3
+script:
+  - bundle exec rake test
+  - bundle exec rake rubocop
