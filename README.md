@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/JaniJegoroff/ee-hotel.svg)](https://travis-ci.org/JaniJegoroff/ee-hotel)
+
 EE Hotel Booking API tests 
 ==========
 
