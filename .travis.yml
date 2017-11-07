@@ -4,6 +4,8 @@ rvm:
 notifications:
   email:
     - jani.jegoroff@gmail.com
+before_install:
+  - cd api
 install:
   - bundle install --retry=3
 script:

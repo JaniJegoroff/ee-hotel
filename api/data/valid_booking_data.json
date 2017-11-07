@@ -2,7 +2,7 @@
   "firstname": "aaa",
   "lastname": "bbb",
   "totalprice": "111",
-  "depositpaid": "true",
+  "depositpaid": "false",
   "bookingdates": {
     "checkin": "2018-11-01",
     "checkout": "2018-11-02"

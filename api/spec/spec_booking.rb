@@ -15,7 +15,7 @@ describe 'Booking' do
       expect(data['firstname']).to eq('aaa')
       expect(data['lastname']).to eq('bbb')
       expect(data['totalprice']).to eq(111)
-      expect(data['depositpaid']).to eq(true)
+      expect(data['depositpaid']).to eq(false)
       expect(data['bookingdates']['checkin']).to eq('2018-11-01')
       expect(data['bookingdates']['checkout']).to eq('2018-11-02')
     end
