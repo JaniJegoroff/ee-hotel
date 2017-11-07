@@ -1,0 +1,17 @@
+# Custom config for Rubocop static code analysis
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/BlockLength:
+  ExcludedMethods: ['describe', 'context']
+  Max: 30
+
+Style/MethodMissing:
+  Enabled: false
+
+Style/GlobalVars:
+  Enabled: false
