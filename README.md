@@ -15,15 +15,15 @@ Postman
 Prerequisites for automated tests
 ==========
 
-1) You have Ruby 2.x environment installed
+1) Ruby 2.x environment is installed
 
-2) You have `Homebrew` installed: [http://brew.sh/](http://brew.sh/)
+2) `Homebrew` is installed: [http://brew.sh/](http://brew.sh/)
 
-3) You have `bundler` gem installed: `$ gem install bundler`
+3) `bundler` gem is installed: `$ gem install bundler`
 
-4) You have `chromedriver` installed: `$ brew install chromedriver`
+4) `chromedriver` is installed: `$ brew install chromedriver`
 
-5) You have `Chrome` browser installed
+5) `Chrome` browser is installed
 
 License
 ==========
