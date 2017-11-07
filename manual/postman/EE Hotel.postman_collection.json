@@ -8,6 +8,19 @@
 	"item": [
 		{
 			"name": "Get bookings",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -30,6 +43,24 @@
 		},
 		{
 			"name": "Create booking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"bookingid\");",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
@@ -60,6 +91,19 @@
 		},
 		{
 			"name": "Delete booking",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						]
+					}
+				}
+			],
 			"request": {
 				"method": "DELETE",
 				"header": [
@@ -77,7 +121,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://hotel-test.equalexperts.io/booking/3703",
+					"raw": "http://hotel-test.equalexperts.io/booking/3946",
 					"protocol": "http",
 					"host": [
 						"hotel-test",
@@ -86,7 +130,7 @@
 					],
 					"path": [
 						"booking",
-						"3703"
+						"3946"
 					]
 				},
 				"description": ""
