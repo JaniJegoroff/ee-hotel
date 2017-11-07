@@ -1,0 +1,97 @@
+{
+	"info": {
+		"name": "EE Hotel",
+		"_postman_id": "1f1e9cda-7ef7-4249-bd32-82343fb5eb7d",
+		"description": "Equal Experts hotel booking API requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get bookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://hotel-test.equalexperts.io/booking",
+					"protocol": "http",
+					"host": [
+						"hotel-test",
+						"equalexperts",
+						"io"
+					],
+					"path": [
+						"booking"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstname\": \"aa\",\n\t\"lastname\": \"aa\",\n\t\"totalprice\": \"11\",\n\t\"depositpaid\": \"true\",\n\t\"bookingdates\": {\n\t\t\"checkin\": \"2018-11-01\",\n\t\t\"checkout\": \"2018-11-02\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://hotel-test.equalexperts.io/booking",
+					"protocol": "http",
+					"host": [
+						"hotel-test",
+						"equalexperts",
+						"io"
+					],
+					"path": [
+						"booking"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete booking",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46cGFzc3dvcmQxMjM="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://hotel-test.equalexperts.io/booking/3703",
+					"protocol": "http",
+					"host": [
+						"hotel-test",
+						"equalexperts",
+						"io"
+					],
+					"path": [
+						"booking",
+						"3703"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
