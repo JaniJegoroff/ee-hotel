@@ -34,6 +34,7 @@ describe 'Booking' do
     end
 
     it 'should respond 500 Internal Server Error when creating booking with invalid data' do
+      # TODO: API should actually return 400 Bad Request?
       expect(SpecUtils::Utils.create_invalid_booking.code).to eq(500)
     end
 

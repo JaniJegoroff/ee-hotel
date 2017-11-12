@@ -1,14 +1,12 @@
-require 'rake/testtask'
+# require 'rake/testtask'
 require 'rubocop/rake_task'
+require 'cucumber/rake/task'
 
-task default: %i[test rubocop]
+task default: %i[cucumber rubocop]
 
 desc 'Run tests'
-Rake::TestTask.new do |t|
-  t.libs << 'spec'
-  t.test_files = FileList['spec/spec_*.rb']
-  t.verbose = true
-  t.warning = false
+Cucumber::Rake::Task.new(:cucumber) do |t|
+  t.cucumber_opts = 'features --format pretty'
 end
 
 desc 'Execute RuboCop static code analysis'
